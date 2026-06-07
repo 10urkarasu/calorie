@@ -1,0 +1,59 @@
+/* Premium Yazı Tipi İnce Ayarları */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    max-width: 28rem;   /* Çerçevenin genişliği */
+    margin: 0 auto;     /* Ekranı ortala */
+    position: relative;
+}
+
+/* Navigasyon Aktif Eleman Stili */
+nav button.active-nav {
+    color: #10b981 !important; /* Emerald 600 */
+    font-weight: 800 !important;
+}
+
+/* İnce ve Yumuşak Kaydırma Çubuğu */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+/* Premium Kart Hover Efektleri */
+.menu-premium-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.menu-premium-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+}
+
+/* Tab Geçiş Yumuşaklığı */
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Modal Aşağıdan Yukarı Kayma Animasyonu */
+.animate-slide-up {
+    animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
